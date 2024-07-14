@@ -24,6 +24,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ---------------------------------------------------
 ]]
 
+if not menu_available then return end
+
 RMenu.Add('lvc', 'main', RageUI.CreateMenu(' ', Lang:t('menu.main'), 0, 0, "lvc", "lvc_v3_logo"))
 RMenu.Add('lvc', 'maintone', RageUI.CreateSubMenu(RMenu:Get('lvc', 'main'),' ', Lang:t('menu.siren'), 0, 0, "lvc", "lvc_v3_logo"))
 RMenu.Add('lvc', 'hudsettings', RageUI.CreateSubMenu(RMenu:Get('lvc', 'main'),' ', Lang:t('menu.hud'), 0, 0, "lvc", "lvc_v3_logo"))

@@ -4,6 +4,8 @@ community_id = ''
 --		I recommend something short (4-6 characters) for example a community abbreviation. SPACES ARE NOT ALLOWED.
 
 ------------------MENU KEYBINDING------------------
+menu_available = true
+--  Sets the menu as functionnal, setting it to false disables the in game menu to control and alter the sirens for players
 open_menu_key = 'O'
 --	Sets default key for RegisterKeyMapping. Examples: 'l','F5', etc. DEFAULT: 'O', users may set one in their GTA V > Settings > Hotkeys > FiveM settings. 
 --		More info: https://cookbook.fivem.net/2020/01/06/using-the-new-console-key-bindings/
