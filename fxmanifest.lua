@@ -38,7 +38,7 @@ files({
 shared_script {
 	'/UTIL/semver.lua',
 	'/UI/cl_locale.lua',
-	'/UI/locale/en.lua',	-- Set locale / language file here.
+	'/UI/locale/*.lua',
 	'SETTINGS.lua',
 }
 

@@ -1,3 +1,5 @@
+if language ~= "fr" then return end
+
 local Translations = {
 	warning = {
 		warning = 'Attention',

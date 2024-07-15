@@ -1,3 +1,5 @@
+if language ~= "de" then return end
+
 local Translations = {
 	warning = {
 		warning = 'Warnung',
