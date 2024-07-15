@@ -3,6 +3,14 @@ community_id = ''
 --	Sets a prefix for saved values at the user end, without this people who play on multiple LVC server could face conflicts. **Once set DO NOT CHANGE. It will result in loss of data for end users.**
 --		I recommend something short (4-6 characters) for example a community abbreviation. SPACES ARE NOT ALLOWED.
 
+----------------------LANGUAGE---------------------
+language = "en"
+--  Sets the used locale for the script
+--      Currently supports:
+--          - "en" - English
+--          - "de" - Deutsch
+--          - "fr" - Français
+
 ------------------MENU KEYBINDING------------------
 menu_available = true
 --  Sets the menu as functionnal, setting it to false disables the in game menu to control and alter the sirens for players
