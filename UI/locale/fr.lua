@@ -3,11 +3,13 @@ if language ~= "fr" then return end
 local Translations = {
 	warning = {
 		warning = 'Attention',
+
 		-- WRONG BRANCH NOTIFIER --
 		wrong_branch_warning = '~b~LVC~w~: ~o~Attention~w~: Ceci est la branche de développement (master)',
-		wrong_branch_info = '~y~CETTE VERSION EST EN DÉVELOPPEMENT ET N'EST PAS RECOMMANDÉE\nPOUR UNE UTILISATION EN PRODUCTION. SI C'EST UNE ERREUR, TÉLÉCHARGEZ LA\nDERNIÈRE VERSION STABLE À:\n~g~github.com/TrevorBarns/luxart-vehicle-control~p~~h~/releases~h~',
+		wrong_branch_info = '~y~CETTE VERSION EST EN DÉVELOPPEMENT ET N\'EST PAS RECOMMANDÉE\nPOUR UNE UTILISATION EN PRODUCTION. SI C\'EST UNE ERREUR, TÉLÉCHARGEZ LA\nDERNIÈRE VERSION STABLE À:\n~g~github.com/TrevorBarns/luxart-vehicle-control~p~~h~/releases~h~',
 		wrong_branch_mute = '~b~POUR DÉSACTIVER CET AVERTISSEMENT~w~: Définissez CONVAR "~o~experimental~w~" sur "~o~true~w~" dans fxmanifest.',
 		profile_missing = '^3LVC(%{ver}) ATTENTION: la table "DEFAULT" est absente de la table %{tbl}. Utilisation d\'une table vide pour %{model}.',
+
 		-- SIREN CONTROLLER --
 		too_few_tone_frontend = '~b~LVC ~y~Attention %{code}:~s~ trop peu de sirènes assignées.',
 		too_few_tone_console = '^3LVC(%{ver}) Attention %{code}: trop peu de sirènes assignées. Minimum %{req_tone_count} tons requis. (UTIL:SetToneByPos(%{tone_string}, %{pos})',
@@ -17,7 +19,7 @@ local Translations = {
 		tone_id_nil_console = '^3LVC(%{ver}) Attention %{code}: tentative de définir le ton %{tone_string} mais, impossible de localiser la position: %{tone_id} dans approved_tones. (UTIL:SetToneByPos(%{tone_string}, %{pos}). Essayez de réinitialiser car cela peut se produire après un changement d\'assignations des tons de sirène.',
 		factory_reset = 'Êtes-vous sûr de vouloir supprimer toutes les données LVC enregistrées et réinitialiser l\'usine?',
 		facory_reset_options= '~g~Non: Échap \t ~r~Oui: Entrée',
-	},	
+	},
 	error = {
 		-- CONFIG ERRORS -- 
 		missing_community_id_frontend = '~b~~h~LVC~h~ ~r~~h~ERREUR DE CONFIGURATION~h~~s~: IDENTIFIANT DE LA COMMUNAUTÉ MANQUANT. VOIR LES JOURNAUX. CONTACTEZ LE DÉVELOPPEUR DU SERVEUR.',
@@ -28,13 +30,14 @@ local Translations = {
 		resource_conflict_console = '^1ERREUR LVC: DÉTECTION DE "lux_vehcontrol" EN COURS D\'EXÉCUTION, CECI ENTRE EN CONFLIT AVEC LVC. VEUILLEZ ARRÊTER "lux_vehcontrol" ET REDÉMARRER LVC.',
 		profile_none_found_frontend = '~b~~h~LVC~h~ ~r~~h~ERREUR DE CONFIGURATION~h~~s~: TABLE PAR DÉFAUT MANQUANTE. VOIR LES JOURNAUX. CONTACTEZ LE DÉVELOPPEUR DU SERVEUR.',
 		profile_none_found_console = '^1ERREUR DE CONFIGURATION: IMPOSSIBLE DE TROUVER UN PROFIL POUR \'^3%{game_name}^1\', ET LA TABLE DE SECOURS REQUISE \'DEFAULT\' EST ABSENTE. (https://bit.ly/LVC-CSATS)',
-	
+
 		-- FRONTEND ERRORS --
 		reg_keymap_nil_1 = '~b~~h~LVC~h~ ~r~~h~ERREUR 2~h~~s~: Valeur nulle capturée.\ndétails: (%{i}, %{proposed_tone}, %{profile_name})',
 		reg_keymap_nil_2 = '~b~~h~LVC~h~ ~r~~h~ERREUR 2~h~~s~: Essayez de changer de véhicule et de revenir OU de charger les paramètres du profil (si une sauvegarde est présente).',
 		profile_nil_table_frontend = '~b~~h~LVC~h~ ~r~ERREUR: %{tbl} a tenté d\'obtenir un profil à partir d\'une table nulle. Voir la console.',
 		profile_nil_table_console = '^1LVC(%{ver}) ERREUR: %{tbl} a tenté d\'obtenir un profil à partir d\'une table nulle. Cela est généralement causé par un caractère invalide ou un { } manquant dans SIRENS.lua. (https://git.io/JDVhK)',
 	},
+
 	info = {
 		locked = 'Boîte de contrôle des sirènes: ~r~Verrouillé',
 		unlocked = 'Boîte de contrôle des sirènes: ~g~Déverrouillé',
@@ -51,18 +54,19 @@ local Translations = {
 		factory_reset_success_console = 'Succès: toutes les données enregistrées ont été effacées.',
 		factory_reset_success_frontend = '~g~Succès~s~: Vous avez supprimé toutes les données enregistrées et réinitialisé LVC.',
 	},
+
 	control = {
 		siren_control_desc = 'LVC Sirène: %{ord_num}',
 		lock_desc = 'LVC: Verrouiller les contrôles',
 		menu_desc = 'LVC: Ouvrir le menu',
 	},
+
 	command = {
 		lock_command = 'lvclock',
 		lock_desc = 'Basculer le verrouillage des touches de Luxart Vehicle Control.',
 		debug_command = 'lvcdebug',
-		
 	},
-	
+
 	menu = {
 		-- MENU SUBTITLES --
 		main = 'Menu Principal',
@@ -160,7 +164,6 @@ local Translations = {
 		load_desc =  'Charger les paramètres LVC.',
 		load_success = '~g~Succès~s~: Vos paramètres ont été chargés.',
 		load_override = '~r~Cela écrasera tous les paramètres non enregistrés.',
-		copy = 'Copier les Paramètres',
 		copy_desc = 'Copier les paramètres du profil d\'un autre véhicule.',
 		reset = 'Réinitialiser les Paramètres',
 		reset_desc = '~r~Réinitialiser LVC à son état par défaut, préserve les sauvegardes existantes. Écrasera tous les paramètres non enregistrés.',
@@ -184,6 +187,7 @@ local Translations = {
 		about_credits = 'À Propos / Crédits',
 		about_credits_desc = 'Conçu et créé à l\'origine par ~b~Lt. Caine~s~. Effets sonores ELS par ~b~Faction~s~. Extension de la version 3 par ~b~Trevor Barns~s~.\n\nRemerciements particuliers à tous les contributeurs (voir GitHub), à l\'équipe de RageUI, et à tous ceux qui ont aidé aux tests bêta, cela n\'aurait pas été possible sans vous tous !'
 	},
+
 	plugins = {
 		menu_tkd = 'Paramètres Takedown',
 		menu_tkd_desc = 'Ouvrir le menu des feux takedown. (takedowns)',
@@ -286,7 +290,6 @@ local Translations = {
 		ts_door_desc = 'Ouvrir / Fermer %{door}.',
 		ts_not_found = 'Introuvable',
 	},
-	
 }
 
 Lang = Locale:new({
