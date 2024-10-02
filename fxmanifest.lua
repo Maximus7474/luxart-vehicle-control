@@ -36,10 +36,10 @@ files({
 
 
 shared_script {
+	'SETTINGS.lua',
 	'/UTIL/semver.lua',
 	'/UI/cl_locale.lua',
 	'/UI/locale/*.lua',
-	'SETTINGS.lua',
 }
 
 client_scripts {
